@@ -1,0 +1,1289 @@
+﻿/*1.top*/
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*背景层*/
+#back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.body_first_bg {
+
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    background-repeat: no-repeat;
+
+}
+
+.wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*在必需时对象内容才会被裁切或显示滚动条*/
+    overflow: auto;
+    min-width: 1000px;
+}
+
+.top_wrap {
+    width: 100%;
+    height: 88px;
+    background-color: #1d1f3e;
+
+}
+
+.top_main {
+
+    width: 1008px;
+    height: 100%;
+    /*居中*/
+    margin: 0 auto;
+    position: relative;
+}
+
+/*logo*/
+.a_jt_logo{
+    float: left;
+}
+#jt_logo {
+    margin-top: 23px;
+}
+
+/*下拉框*/
+#ddlSomoveLanguage {
+
+
+}
+
+.lan_switch {
+    position: absolute;
+    right: 100px;
+    z-index: 10;
+    top: 23px;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.gq_icon {
+    width: 16px;
+    height: 16px;
+
+}
+
+#select_font {
+    font: 12px Microsoft Yahei;
+    position: relative;
+    top: -22px;
+    left: -58px;
+    color: #ccc;
+    text-align: right;
+}
+
+#select_xiala {
+    position: relative;
+    top: -38px;
+    left: 85px;
+}
+
+.select_options {
+    position: absolute;
+    /*left: 1100px;*/
+    left: -10px;
+    top: 28px;
+    width: 102px;
+    /*行高*/
+
+    font: 12px Microsoft Yahei;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    display: none;
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+#lan_china {
+    display: block;
+    position: relative;
+    /*文字右移*/
+    text-indent: 20px;
+    height: 30px;
+    text-decoration:none;
+}
+
+#lan_china_icon {
+    position: absolute;
+    left: 14px;
+    top: 6px;
+}
+
+#lan_china_font {
+    position: relative;
+    color: #4e52a2;
+    top: 5px;
+    left: 18px;
+}
+#lan_fan{
+    position: relative;
+    display: block;
+    height: 30px;
+    text-decoration:none;
+}
+#lan_fan_icon{
+    position: relative;
+    top: 7px;
+    left: 14px;
+    
+}
+#lan_fan_font{
+    position: relative;
+    top: -14px;
+    text-align: center;
+    left: 11px;
+    color: #4e52a2;
+}
+#lan_en{
+    position: relative;
+    display: block;
+    height: 30px;
+    text-decoration:none;
+}
+#lan_en_icon{
+    position: relative;
+    top: 7px;
+    left: 14px;
+    
+}
+#lan_english_font{
+    position: relative;
+    top: -14px;
+    text-align: center;
+    left: 8px;
+    color: #4e52a2;
+
+}
+/*2.导航栏*/
+
+.po{
+    font: 16px Microsoft Yahei;
+    display: block;
+    width: 700px;
+    float: right;
+    margin-top: 30px;
+
+
+}
+.po li {
+
+    list-style-type: none;
+    float: left;
+    width: 120px;
+    height: 30px;
+    /*行高*/
+    line-height: 28px;
+    /*字体*/
+
+    color: #4e52a2;
+    /*border: 3px solid #ffffff;*/
+    /*background-color: #8D8EA2;*/
+    text-align: center;
+    display: block;
+
+}
+.po li a:hover{
+     color: #FFFFFF;
+
+}
+
+.blue_font {
+
+    /*字体*/
+    text-decoration: none;
+
+    color: #677CE1;
+    /*border: 3px solid #ffffff;*/
+    /*background-color: #8D8EA2;*/
+}
+.white_font{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-bottom:  5px;
+    border-bottom:2px solid;
+
+}
+
+
+#title_first {
+    list-style-type: none;
+    float: left;
+    width: 160px;
+    height: 30px;
+    /*行高*/
+    line-height: 28px;
+    /*字体*/
+
+    color: #FFFFFF;
+    /*border: 3px solid #ffffff;*/
+    /*background-color: #8D8EA2;*/
+    text-align: center;
+    display: block;
+    cursor: pointer;
+
+}
+
+/* */
+#subMenu {
+    /*这里的高度，不能自动匹配*/
+    height: 3000px;
+    /*height: 100%;*/
+    width: 100%;
+}
+
+
+/************************** first页面 **********************************/
+#first {
+
+}
+
+/*第一模块*/
+.first_title_wrap {
+    background-color: #1d1f3e;
+    width: 100%;
+    /*874-106*/
+    height: 768px;
+
+}
+
+/*居中*/
+.first_globe_father {
+
+    width: 1008px;
+    height: 100%;
+    /*居中*/
+    margin: 0 auto;
+    position: relative;
+
+}
+
+#first_globe {
+
+    position: relative;
+
+    top: 70px;
+}
+
+#first_save_value {
+    font: 18px Microsoft Yahei;
+    position: absolute;
+    top: 338px;
+    left: 80px;
+    color: #ffffff;
+
+}
+
+#first_option_quickly {
+    font: 18px Microsoft Yahei;
+    position: absolute;
+    top: 280px;
+    left: 845px;
+    color: #ffffff;
+
+}
+
+#first_option_safe {
+    font: 18px Microsoft Yahei;
+    position: absolute;
+    top: 578px;
+    left: 240px;
+    color: #ffffff;
+}
+
+.first_pull {
+
+    position: relative;
+    top: 110px;
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+    display: block;
+    cursor: pointer;
+
+}
+
+/*首页---倒计时模块*/
+#first_body_wrap {
+
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#first_clock_bg {
+    /*避免被压缩*/
+    position: relative;
+   /* left: 50%;
+    margin-left: -1000px;*/
+    width: 100%;
+    height: 700px;
+    background-image: url(../image/first_clock_bg.jpg);
+    background-size: 100% 100%;
+}
+
+#first_clock_main {
+    width: 388px;
+    height: 100%;
+    /*居中*/
+    margin: 0 auto;
+    position: relative;
+
+
+    text-align: center;
+}
+#first_clock_width{
+    width: auto;
+
+}
+#first_clock {
+
+    position: relative;
+    top: 60px;
+
+}
+
+#first_clock_head {
+    font: 28px Microsoft Yahei;
+    color: #3f51a8;
+    /*字体间隔*/
+    letter-spacing: 1px;
+    position: relative;
+    top: 82px;
+
+    margin: 0 auto;
+}
+
+#first_clock_during {
+    font: 18px Microsoft Yahei;
+    color: #3f51a8;
+    /*字体间隔*/
+    letter-spacing: 1px;
+    position: relative;
+    top: 106px;
+    margin: 0 auto;
+}
+
+.first_start_time {
+    font: 24px Microsoft Yahei;
+    color: #3f51a8;
+    /*字体间隔*/
+    letter-spacing: 1px;
+    position: relative;
+    top: 300px;
+    margin: 0 auto;
+}
+.first_remain_days{
+    font: 24px Microsoft Yahei;
+    color: #3f51a8;
+    /*字体间隔*/
+    letter-spacing: 1px;
+    position: relative;
+    top: 310px;
+    margin: 0 auto;
+}
+.first_countdown {
+    font: 22px Microsoft Yahei;
+    color: #ffffff;
+    /*字体间隔*/
+    letter-spacing: 1px;
+    position: relative;
+    top: 320px;
+    margin: 0 auto;
+
+}
+
+/*首页，第三模块*/
+#first_body_download {
+    position: relative;
+    width: 100%;
+    height: 453px;
+
+}
+
+
+
+/*#first_rect {
+    position: relative;
+    top: 200px;
+    background-image: url(../image/do_bg.png);
+    display: block;
+    width: 270px;
+    height: 68px;
+    margin: 0 auto;
+    cursor: default;
+
+}
+
+*//*background-image: url(../image/first_rect_hover.png);*//*
+#first_rect:hover{
+    position: relative;
+    top: 200px;
+    
+    display: block;
+    width: 270px;
+    height: 68px;
+    margin: 0 auto;
+
+}*/
+#first_rect {
+    position: relative;
+    top: 200px;
+    background-image: url(../image/do_bg.png);
+    display: block;
+    width: 270px;
+    height: 68px;
+    margin: 0 auto;
+    cursor: default;
+
+}
+#first_rect.click {
+    cursor: pointer;
+    background-image: url(../image/first_rect2.png);
+}
+#first_rect.click:hover {
+    background-image: url(../image/first_rect_hover.png);
+}
+
+#first_download_font {
+    font: 20px Microsoft Yahei;
+    color: #ffffff;
+    /*字体间隔*/
+    letter-spacing: 1px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+
+}
+
+#first_download_icon {
+    position: relative;
+    top: 20px;
+    left: 205px;
+
+}
+
+.first_bottom {
+    position: relative;
+    background-color: #282828;
+    width: 100%;
+    text-align: center;
+    height: 156px;
+}
+
+.first_email {
+    font: 14px Microsoft Yahei;
+    color: #ffffff;
+    position: relative;
+    top: 40px;
+
+}
+
+.first_contact_us {
+    font: 14px Microsoft Yahei;
+    color: #ffffff;
+    position: relative;
+    top: 52px;
+
+}
+/*.first_wking{
+    font: 24px Microsoft Yahei;
+    color: #3f51a8;
+    *//*字体间隔*//*
+    letter-spacing: 1px;
+    position: relative;
+    top: 360px;
+    margin: 0 auto;
+
+}
+.first_wked{
+    font: 24px Microsoft Yahei;
+    color: #3f51a8;
+    *//*字体间隔*//*
+    letter-spacing: 1px;
+    position: relative;
+    top: 360px;
+    margin: 0 auto;
+
+}*/
+
+.copyright{
+    font: 12px Microsoft Yahei;
+    letter-spacing: 1px;
+    position: relative;
+    top: 95px;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+
+/********************************* 2.技术优势 ***************************************/
+
+
+#adv_feature {
+    background-image: url(../image/adv_feature_bg.jpg);
+    width: 100%;
+    height: 800px;
+
+}
+
+#adv_main {
+    width: 980px;
+    height: 100%;
+    /*居中*/
+    margin: 0 auto;
+    position: relative;
+
+}
+
+#adv_feature_title {
+    position: relative;
+    top: 80px;
+    left: 415px;
+
+}
+
+#adv_feature_send {
+    position: relative;
+    top: 514px;
+    left: 291px;
+
+}
+
+#adv_feature_font {
+    font: 28px Microsoft Yahei;
+    color: #3f51a8;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+#adv_feature_bottom {
+    font: 20px Microsoft Yahei;
+    color: #333333;
+    position: relative;
+    top: 546px;
+    text-align: center;
+}
+
+#adv_feature_timer {
+    position: relative;
+    top: 200px;
+    left: 190px;
+
+}
+
+#adv_feature_lock {
+    position: relative;
+    top: 200px;
+    left: 655px;
+}
+
+#adv_feature_left {
+    font: 20px Microsoft Yahei;
+    color: #333333;
+    position: relative;
+    top: 220px;
+    left: 117px;
+}
+
+#adv_feature_right {
+    font: 20px Microsoft Yahei;
+    color: #333333;
+    position: relative;
+    top: 190px;
+    text-align: right;
+    right: 117px;
+}
+
+/*技术优势，技术特点*/
+#adv_technology {
+    width: 100%;
+    height: 500px;
+
+}
+
+#adv_tec_main {
+    width: 980px;
+    height: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#adv_tec_font {
+    font: 28px Microsoft Yahei;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    color: #3f51a8;
+}
+
+#adv_tec_icon {
+    position: relative;
+    top: 10px;
+    left: 415px;
+}
+
+#adv_tec_chain {
+    position: relative;
+    top: 150px;
+    left: -80px;
+
+}
+
+#adv_tec_rsa {
+    position: relative;
+    top: 150px;
+    left: 186px;
+}
+
+#adv_tec_git {
+    position: relative;
+
+    top: 150px;
+    left: 466px;
+}
+
+#adv_font_chain {
+    font: 20px Microsoft Yahei;
+    position: relative;
+    top: 165px;
+    left: 80px;
+}
+
+#adv_font_rsa {
+    font: 20px Microsoft Yahei;
+    position: relative;
+    top: 140px;
+    left: 10px;
+    text-align: center;
+}
+
+#adv_font_git {
+    font: 20px Microsoft Yahei;
+    position: relative;
+
+    top: 115px;
+    text-align: right;
+    right: 65px;
+}
+
+/********************************* 三、大事纪 ***********************************/
+#progress {
+
+    width: 100%;
+    overflow: hidden;
+}
+
+#pro_wrap {
+    /*避免被压缩*/
+    position: relative;
+    /*left: 50%;
+    margin-left: -950px;*/
+    background-size: 100% 100%;
+    height: 680px;
+    background-image: url(../image/process_bg.jpg);
+}
+
+#pro_main {
+
+    width: 1008px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+
+
+}
+
+
+
+
+#pro_event_line {
+
+    position: relative;
+    top: 265px;
+    left: 54px;
+
+}
+
+#pro_2013 {
+    position: relative;
+    top: 290px;
+    left: -890px;
+}
+
+#pro_round2 {
+    position: relative;
+    top: 154px;
+    left: 280px;
+}
+
+#pro_round3 {
+    position: relative;
+    top: 220px;
+    left: 490px;
+}
+
+#pro_round4 {
+    position: relative;
+    top: 170px;
+    left: 760px;
+}
+
+#pro_start_time {
+    position: relative;
+    top: 220px;
+    left: 35px;
+    font: 18px Microsoft Yahei;
+    color: #333333;
+
+}
+
+#pro_hope1 {
+    font: 18px Microsoft Yahei;
+    position: relative;
+    top: 145px;
+    left: 280px;
+    color: #333333;
+}
+
+#pro_hope2 {
+    font: 18px Microsoft Yahei;
+    position: relative;
+    top: 185px;
+    left: 120px;
+    text-align: center;
+    color: #333333;
+}
+
+#pro_hope3 {
+    font: 18px Microsoft Yahei;
+    position: relative;
+    top: 110px;
+    left: 75px;
+    text-align: right;
+    color: #333333;
+}
+
+#pro_2013_rect1 {
+    position: relative;
+    top: 165px;
+
+}
+
+#pro_2013_rect2 {
+    position: relative;
+    top: 35px;
+    left: 260px;
+}
+
+#pro_2013_rect3 {
+    position: relative;
+    top: 15px;
+    left: 540px;
+}
+
+#pro_2013_rect4 {
+    position: relative;
+    top: -115px;
+    left: 865px;
+}
+
+#pro_time1 {
+    font: 14px Microsoft Yahei;
+    position: relative;
+    top: 150px;
+    left: 20px;
+    text-align: left;
+    color: #999999;
+}
+
+#pro_time2 {
+    font: 14px Microsoft Yahei;
+    position: relative;
+    top: 20px;
+    left: 280px;
+    text-align: left;
+    color: #999999;
+}
+
+#pro_time3 {
+    font: 14px Microsoft Yahei;
+    position: relative;
+    top: 0px;
+    left: 560px;
+    text-align: left;
+    color: #999999;
+}
+
+#pro_time4 {
+    font: 14px Microsoft Yahei;
+    position: relative;
+    top: -130px;
+    left: 885px;
+    text-align: left;
+    color: #999999;
+}
+
+#pro_detail1 {
+    font: 14px Microsoft Yahei;
+    position: relative;
+    top: 155px;
+    left: 20px;
+    text-align: left;
+    color: #999999;
+}
+
+#pro_detail2 {
+    font: 14px Microsoft Yahei;
+    position: relative;
+    top: 25px;
+    left: 280px;
+    text-align: left;
+    color: #999999;
+}
+
+#pro_detail3 {
+    font: 14px Microsoft Yahei;
+    position: relative;
+    top: 5px;
+    left: 560px;
+    text-align: left;
+    color: #999999;
+}
+
+#pro_detail4 {
+    font: 14px Microsoft Yahei;
+    position: relative;
+    top: -125px;
+    left: 885px;
+    text-align: left;
+    color: #999999;
+}
+
+#pro_year1{
+    font: 18px Microsoft Yahei;
+    position: relative;
+    top: 5px;
+    left: 40px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#pro_year2{
+    font: 18px Microsoft Yahei;
+    position: relative;
+    top: -130px;
+    left: 295px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#pro_year3{
+    font: 18px Microsoft Yahei;
+    position: relative;
+    top: -145px;
+    left: 590px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#pro_year4{
+    font: 18px Microsoft Yahei;
+    position: relative;
+    top: -275px;
+    left: 945px;
+    text-align: left;
+    color: #FFFFFF;
+}
+/***************************** 四、下载专区*********************************/
+#download {
+
+}
+
+#download_wrap {
+    width: 100%;
+    height: 1230px;
+    background-image: url(../image/download_bg.jpg)
+}
+
+#download_main {
+    width: 1008px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#download_baipishu {
+    font: 28px Microsoft Yahei;
+    color: #3f51a8;
+    position: relative;
+    top: 134px;
+    left: -216px;
+
+    text-align: center;
+}
+
+#download_bps_intro {
+    font: 16px Microsoft Yahei;
+    color: #3f51a8;
+    position: relative;
+    top: 159px;
+    left: -216px;
+
+    text-align: center;
+
+}
+
+#download_wakaungji {
+    font: 28px Microsoft Yahei;
+    color: #999999;
+    position: relative;
+    top: 300px;
+    left: -216px;
+
+    text-align: center;
+}
+
+#download_wgj_intro {
+    font: 16px Microsoft Yahei;
+    color: #999999;
+    position: relative;
+    top: 325px;
+    left: -216px;
+
+    text-align: center;
+}
+
+#download_baipishu_bg {
+
+    position: absolute;
+    top: 140px;
+    left: 594px;
+    background-image: url(../image/download_wkj_huise.png);
+    width: 270px;
+    height: 68px;
+    display: block;
+    text-decoration: none;
+    cursor: default;
+}
+/*#download_baipishu_bg:hover{
+
+    position: absolute;
+    top: 140px;
+    left: 594px;
+    background-image: url(../image/download_baipishu_hover.png);
+    width: 270px;
+    height: 68px;
+    display: block;
+    text-decoration: none;
+}
+
+
+*/
+#download_wkj_huise {
+    position: absolute;
+    top: 370px;
+    left: 594px;
+    background-image: url(../image/download_wkj_huise.png);
+    width: 270px;
+    height: 68px;
+    display: block;
+    text-decoration: none;
+    cursor: default;
+}
+
+#DPOS_notification{
+    position: absolute;
+    top: 395px;
+    left: 870px;
+    width: 200px;
+    height: 15px;
+    display: block;
+    text-decoration: none;
+    cursor: default;
+    color: #ff0000;
+    font: 14px Microsoft Yahei;
+}
+
+#download_wkj_huise.click{
+    cursor: pointer;
+    background-image: url(../image/download_baipishu_bg.png);
+
+}
+#download_wkj_huise.click:hover{
+    background-image: url(../image/download_baipishu_hover.png);
+
+}
+#download_baipishu_font {
+
+    font: 20px Microsoft Yahei;
+    color: #FFFFFF;
+    position: relative;
+    top: 18px;
+    left: 60px;
+
+}
+
+#download_bps_icon {
+    position: relative;
+    top: -8px;
+    left: 180px;
+
+    z-index: 1001;
+}
+
+#download_gop_font {
+    font: 20px Microsoft Yahei;
+    color: #999999;
+    position: relative;
+    top: 18px;
+    left: -91px;
+
+    text-align: right;
+
+}
+
+#download_wkj_icon {
+    position: relative;
+    top: -8px;
+    left: 200px;
+
+
+}
+/*   gop钱包      */
+#download_gopwallet{
+    font: 28px Microsoft Yahei;
+    color: #3f51a8;
+    position: relative;
+    top: 450px;
+    left: -216px;
+
+    text-align: center;
+}
+#download_gopwallet_intro{
+    font: 16px Microsoft Yahei;
+    color: #3f51a8;
+    position: relative;
+    top: 475px;
+    left: -216px;
+
+    text-align: center;
+}
+#download_gopwallet_huise {
+    position: absolute;
+    top: 580px;
+    left: 594px;
+    background-image: url(../image/download_wkj_huise.png);
+    width: 270px;
+    height: 68px;
+    display: block;
+    text-decoration: none;
+    cursor: default;
+
+
+}
+
+#download_baipishu_bg.click{
+ cursor: pointer;
+ background-image: url(../image/download_baipishu_bg.png);
+
+}
+
+#download_gopwallet_huise.click{
+    cursor: pointer;
+    background-image: url(../image/download_baipishu_bg.png);
+
+}
+#download_gopwallet_huise.click:hover{
+    background-image: url(../image/download_baipishu_hover.png);
+
+}
+#download_gopwallet_font {
+    font: 20px Microsoft Yahei;
+    color: #FFFFFF;
+    position: relative;
+    top: 18px;
+    left: -91px;
+
+    text-align: right;
+
+}
+
+#download_gopwallet_icon {
+    position: relative;
+    top: -8px;
+    left: 200px;
+
+
+}
+
+
+/*快照*/
+#download_kuaizhao{
+    font: 28px Microsoft Yahei;
+    color: #3f51a8;
+    position: relative;
+    top: 600px;
+    left: -216px;
+
+    text-align: center;
+}
+#download_kuaizhao_intro{
+    font: 16px Microsoft Yahei;
+    color: #3f51a8;
+    position: relative;
+    top: 625px;
+    left: -216px;
+
+    text-align: center;
+}
+#download_kuaizhao_huise {
+    position: absolute;
+    top: 780px;
+    left: 594px;
+    background-image: url(../image/download_wkj_huise.png);
+    width: 270px;
+    height: 68px;
+    display: block;
+    text-decoration: none;
+    cursor: default;
+
+
+}
+
+#download_kuaizhao_huise.click{
+    cursor: pointer;
+    background-image: url(../image/download_baipishu_bg.png);
+
+}
+#download_kuaizhao_huise.click:hover{
+    background-image: url(../image/download_baipishu_hover.png);
+
+}
+#download_kuaizhao_font {
+    font:20px Microsoft Yahei;
+    color: #FFFFFF;
+    position: relative;
+    top: 18px;
+    left: -125px;
+    text-align: right;
+
+}
+
+#download_kuaizhao_icon {
+    position: relative;
+    top: -8px;
+    left: 200px;
+
+
+}
+
+/*快照文档下载*/
+#download_kuaizhaodoc{
+    font: 28px Microsoft Yahei;
+    color: #3f51a8;
+    position: relative;
+    top: 760px;
+    left: -216px;
+
+    text-align: center;
+}
+#download_kuaizhaodoc_intro{
+    font: 16px Microsoft Yahei;
+    color: #3f51a8;
+    position: relative;
+    top: 785px;
+    left: -216px;
+
+    text-align: center;
+}
+#download_kuaizhaodoc_huise {
+    position: absolute;
+    top: 1000px;
+    left: 594px;
+    background-image: url(../image/download_wkj_huise.png);
+    width: 270px;
+    height: 68px;
+    display: block;
+    text-decoration: none;
+    cursor: default;
+
+
+}
+
+#download_kuaizhaodoc_huise.click{
+    cursor: pointer;
+    background-image: url(../image/download_baipishu_bg.png);
+
+}
+#download_kuaizhaodoc_huise.click:hover{
+    background-image: url(../image/download_baipishu_hover.png);
+
+}
+#download_kuaizhaodoc_font {
+    font: 20px Microsoft Yahei;
+    color: #FFFFFF;
+    position: relative;
+    top: 18px;
+    left: -125px;
+    text-align: right;
+
+}
+
+#download_kuaizhaodoc_icon {
+    position: relative;
+    top: -8px;
+    left: 200px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

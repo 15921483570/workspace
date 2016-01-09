@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="./js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="./js/jquery.json-2.3.js"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		$(function() {
+
+			doMethod("login", new Array("root", "root"));
+
+		});
+
+		function doMethod(method, args) {
+			var jsonRpc = {
+				'id' : '5',
+				"method" : method,
+				"args" : args
+			}
+			//confirm($.toJSON(jsonRpc));
+			$.ajax({
+
+				type : "POST",
+
+				url : "./exe",
+
+				data : $.toJSON(jsonRpc),
+
+				dataType : "json",
+				contentType : "application/json; charset=utf-8",
+
+				success : function(data) {
+					confirm( $.toJSON(data));
+				}
+			});
+		}
+	</script>
+
+	sadsadasdasdasd
+</body>
+</html>
