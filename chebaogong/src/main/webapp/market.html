@@ -77,8 +77,17 @@
 							success : function(data) {
 								var result=new String;
 								result = data.result;
+								result = result.replace('}', '');
+								result = result.replace('"', '');
+								result = result.replace(':', '');
+								result = result.replace('args', '');
+								result = result.replace('args', '');
+								result = result.replace('{', '');
+								result = result.replace('[', '');
+								result = result.replace(']', '');
+								result = result.replace('":"', '');
 								var str = result.split(',');
-								$("ul #vinNumValue").html(str[2]);
+								$("ul #vinNumValue").html(($("#vinNum").val()));
 								$("ul #repairsInfoValue").html(str[3]);
 								$("ul #miles").html(str[4]);
 								$("ul #maintenanceInfoValue").html(str[5]);
@@ -104,8 +113,8 @@
 			    			async : false,
 			    			contentType : "application/json; charset=utf-8",
 			    			success : function(data) {
-			    				vehicleInfo = data.result.split('"')[9];
-			    				confirm( $.toJSON(data));
+			    				vehicleInfo = data.result.split('"')[7];
+			    				//confirm( $.toJSON(data));
 			    			}
 			    		});
 						
@@ -121,9 +130,9 @@
 						var jsonRpc2 = {
 				    			'id' : vinNum,
 				    			"method" : "blockchain_judgement_data",
-				    			"args":["197c8a519b25e6fec7906535992d1b5133f21003", "test0079", "", 300000, "", "ad", ""]
+				    			//"args":["197c8a519b25e6fec7906535992d1b5133f21003", "test0079", "", 300000, "", "ad", ""]
 				    			
-				    			//"args":[vehicleInfo, vinNum, repairsInfo, milesValue, maintenanceInfo, policyInfo, accidentInfo]
+				    			"args":[vehicleInfo, vinNum, repairsInfo, milesValue, maintenanceInfo, policyInfo, accidentInfo]
 				        	}
 						$.ajax({
 			    			type : "POST",
