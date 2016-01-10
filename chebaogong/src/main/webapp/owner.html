@@ -39,43 +39,66 @@
             <div class="first_globe_father"  style=" margin:0 auto;width:1008px;">
             	<div style="float:right; width:660px; text-align:left; margin-top:16px;">
                     <input class=vinNum placeholder=" 车架号" style="width:45%; height:30px;" />
-                    <input type="button" value="查看" style="width:10%; height:34px;" />
-                    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
-                   	<script type="text/javascript" src="./js/jquery.json-2.3.js"></script>
-					<script src="js/effects.js"></script>
-					<script type="text/javascript">
-					
-					function lookup() {
-						var vinNum = $('#vinNum').val();
-						var url = "http://localhost:8080/transferGopWebApp/query/" + vinNum;
-						$.ajax({
-							type : "GET",
-							url : url,
-							//data : $.toJSON(jsonRpc),
-							dataType : "json",
-							contentType : "application/json; charset=utf-8",
-							success : function(data) {
-								confirm( $.toJSON(data));
-							}
-						});
-					}
-					</script>
-           		</div>
-           		
-                <div style="float:right; width:660px; text-align:center; margin-top:24px;">
+                    <input type="button" value="查看" style="width:10%; height:34px;" onclick="lookup()"/>
+					<div id="recordlist" style="float:right; width:660px; text-align:center; margin-top:24px; display:none;">
                 	<ul class="list">
-                    	<li>11</li>
-                        <li>11</li>
-                        <li>11</li>
-                        <li>11</li>
+                    	<li>车架号</li>
+                        <li>维修信息</li>
+                        <li>公里数</li>
+                        <li>保养信息</li>
+                        <li>保险记录</li>
+                        <li>事故记录</li>
                     </ul>
                     <ul class="list" style="width:45%;">
-                    	<li>12</li>
-                        <li>12</li>
-                        <li>12</li>
-                        <li>12</li>
+                    	<li id="vinNumValue"></li>
+                        <li id="repairsInfoValue"></li>
+                        <li id="miles"></li>
+                        <li id="maintenanceInfoValue"></li>
+                        <li id="policyInfoValue"></li>
+                        <li id="accidentInfoValue"></li>
                     </ul>
-                </div>
+            	</div>
+            	
+            	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+               	<script type="text/javascript" src="./js/jquery.json-2.3.js"></script>
+				<script src="js/effects.js"></script>
+				<script type="text/javascript">
+				
+				function lookup() {
+					$("#recordlist").css("display","block");
+					var vinNum = $('#vinNum').val();
+					var url = "http://localhost:8080/transferGopWebApp/query/" + vinNum;
+					$.ajax({
+						type : "GET",
+						url : url,
+						//data : $.toJSON(jsonRpc),
+						dataType : "json",
+						contentType : "application/json; charset=utf-8",
+						success : function(data) {
+							var result=new String;
+							result = data.result;
+							result = result.replace('}', '');
+							result = result.replace('"', '');
+							result = result.replace(':', '');
+							result = result.replace('args', '');
+							result = result.replace('args', '');
+							result = result.replace('{', '');
+							result = result.replace('[', '');
+							result = result.replace(']', '');
+							result = result.replace('":"', '');
+							var str = result.split(',');
+							$("ul #vinNumValue").html(($("#vinNum").val()));
+							$("ul #repairsInfoValue").html(str[3].replace('"', ''));
+							$("ul #miles").html(str[4].replace('"', ''));
+							$("ul #maintenanceInfoValue").html(str[5].replace('"', ''));
+							$("ul #policyInfoValue").html(str[6].replace('"', ''));
+							$("ul #accidentInfoValue").html(str[7].replace('"', ''));
+						}
+					});
+				}
+
+           		</div>
+           		
             </div>
         </div>
 

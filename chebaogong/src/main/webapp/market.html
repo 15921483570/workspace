@@ -88,11 +88,11 @@
 								result = result.replace('":"', '');
 								var str = result.split(',');
 								$("ul #vinNumValue").html(($("#vinNum").val()));
-								$("ul #repairsInfoValue").html(str[3]);
-								$("ul #miles").html(str[4]);
-								$("ul #maintenanceInfoValue").html(str[5]);
-								$("ul #policyInfoValue").html(str[6]);
-								$("ul #accidentInfoValue").html(str[7]);
+								$("ul #repairsInfoValue").html(str[3].replace('"', ''));
+								$("ul #miles").html(str[4].replace('"', ''));
+								$("ul #maintenanceInfoValue").html(str[5].replace('"', ''));
+								$("ul #policyInfoValue").html(str[6].replace('"', ''));
+								$("ul #accidentInfoValue").html(str[7].replace('"', ''));
 							}
 						});
 					}
@@ -148,7 +148,7 @@
 					
 					</script>
 					
-					<input type="button" value="查询" style="width:10%; height:34px;" onclick="check()"/> 
+					<input type="button" value="验证" style="width:10%; height:34px;" onclick="check()"/> 
                     
            		</div>
             </div>
